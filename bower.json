@@ -1,0 +1,21 @@
+{
+  "name": "mean101-glenn",
+  "description": "",
+  "main": "server/server.js",
+  "authors": [
+    "Glenn Spinner <glenngineer1@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/glenngineer1/mean101-glenn",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "client/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8"
+  }
+}
