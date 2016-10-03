@@ -37,7 +37,7 @@ angular
       }
 
       if (socket.connected) {
-        socket.emit('postMessage', msg)
+        return socket.emit('postMessage', msg)
       }
 
       $http
@@ -46,14 +46,14 @@ angular
         .catch(console.error)
     }
 
-// populating initial messages
+    // populating initial messages
     $http
       .get('/api/messages')
       .then(({ data: { messages }}) =>
         $scope.messages = messages
       )
 
-// receive new messages
+    // receive new messages
     socket.on('newMessage', msg => {
       $scope.messages.push(msg)
       $scope.$apply()
